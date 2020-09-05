@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Baseball: All Fail the Houston Asterisks</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: rgb(12, 12, 124);">
+  <div class="container text-center">
+    <h1 class="jumbotron" style="background-color: rgb(151, 15, 15);">Available Data</h1>
+    <div>
+      <h2 style="color: black;">Major League Baseball Teams</h2>
+      <h3 style="color: black;">Click each team to view player stats.</h3>
+      <ul style="list-style: none;">
+        <!--Change List names to list out each team-->
+        {% for team in teams %}
+          <li style="color: black;">{{ team.player }}: {{ team.position }}</li>
+        {% endfor %}
+      </ul>
+      <h3 style="color: black;">How much does a beer cost at each team's stadium?</h3>
+      <!--Another made up list title--replace w/beer data-->
+      {% for beerteam in beerteams %}
+      <ul style="list-style: none;">
+        <li style="color: black;">{{ beerteam.teamname}}: {{ beerteam.beercost}}</li>
+        {% endfor %}
+    </ul>
+    </div>
+  </div>
+</body>
+
+</html>
