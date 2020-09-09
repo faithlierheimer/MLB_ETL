@@ -2,26 +2,25 @@
 This project aims to Extact, Transform, and Load data from a variety of sources into a database.
 
 ## Sources Used
--Stadium Beer Pricing from [data.world](https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba)
- -CSV Formation
+-Stadium Beer Pricing from [data.world](https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba) (CSV Format)
 
--MLB Stats from [MLB-StatsAPI](https://github.com/toddrob99/MLB-StatsAPI/wiki.)
+-MLB Stats from [MLB-StatsAPI](https://github.com/toddrob99/MLB-StatsAPI/wiki.) (JSON Format)
 
--Web Scrape from [ESPN STATS](http://www.espn.com/mlb/history/leaders/_/breakdown/season/year/2018)
+-Web Scrape from [ESPN STATS](http://www.espn.com/mlb/history/leaders/_/breakdown/season/year/2018) (BeautifulSoup Object)
 
 ## Beer Pricing
 
-### Extract
+### Extract:
 
 A CSV was downloaded from [data.world](https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba). 
 
 The CSV was then imported into a Pandas data frame in a Jupyter Notebook.
 
-### Transform
+### Transform:
 
 Using Pandas, the "nickname" column was dropped and all the columns were renamed.
 
-### Load
+### Load:
 
 Once the Pandas dataframe was cleaned up, it was converted into a dictionary usings the Pandas to_dict() function. 
 
@@ -31,23 +30,23 @@ MongoDB was selected to store our data since our data has common attributes (pri
 
 ## MLB API
 
-### Extract
+### Extract:
 
 Using [MLB-StatsAPI](https://github.com/toddrob99/MLB-StatsAPI/wiki.) a variety of hitting statistics were collected.
 
 First the player IDs were collected using the lookup_player command from the API Wrapper. Using a for loop, the player ID was used to collect the selected stats for each player. The collected data was then loaded into  Pandas data frame. 
 
-### Transform
+### Transform:
 
 Pandas was used to drop duplicate values and null values were replaced with zeros.
 
-### Load
+### Load:
 
 Again, Pandas was used to convert the data frame into a dictionary and then uploaded to a new MongoDB Collection: api_dict
 
-## ESPN Web Scrpae
+## ESPN Web Scrape
 
-### Extract
+### Extract:
 
 Data was scraped from [ESPN STATS](http://www.espn.com/mlb/history/leaders/_/breakdown/season/year/2018)
 
@@ -56,12 +55,12 @@ Utlizing the BeautifulSoup Module, the html information was scraped from ESPN's 
 
 Then a for loop was used to add each player's statistic into a Pandas Dataframe.
 
-### Transform
+### Transform:
 
 Pandas was used to drop the following statistics: ['YRS','BB','G','2B','3B'].
 
 These were dropped to match the data from the API statistics.
 
-### Load
+### Load:
 
 Panas was used again to convert the data into a dictionary and then loaded into a new MongoDB Collection: scraped_stats_dict
