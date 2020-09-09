@@ -2,7 +2,7 @@
 This project aims to Extact, Transform, and Load data from a variety of sources into a database.
 
 ## Sources Used
--Stadium Beer Pricing from [data.world}(https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba)
+-Stadium Beer Pricing from [data.world](https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba)
 
 -MLB Stats from [MLB-StatsAPI](https://github.com/toddrob99/MLB-StatsAPI/wiki.)
 
