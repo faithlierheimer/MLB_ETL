@@ -12,7 +12,7 @@ This project aims to Extact, Transform, and Load data from a variety of sources 
 
 ### Extract
 
-A CSV was downloaded from [data.world}(https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba). 
+A CSV was downloaded from [data.world](https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba). 
 
 The CSV was then imported into a Pandas dataframe in a Jupyter Notebook.
 
