@@ -2,7 +2,7 @@
 This project aims to Extact, Transform, and Load data from a variety of sources into a database.
 
 ## Sources Used
--Stadium Beer Pricing from [link source}(link)
+-Stadium Beer Pricing from [data.world}(https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba)
 
 -MLB Stats from [MLB-StatsAPI](https://github.com/toddrob99/MLB-StatsAPI/wiki.)
 
@@ -12,7 +12,9 @@ This project aims to Extact, Transform, and Load data from a variety of sources 
 
 #Extract
 
-A CSV was downloaded from [link source}(link)(insert link). The CSV was then imported into a Pandas dataframe in a Jupyter Notebook.
+A CSV was downloaded from [data.world}(https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba). 
+
+The CSV was then imported into a Pandas dataframe in a Jupyter Notebook.
 
 #Transform
 
