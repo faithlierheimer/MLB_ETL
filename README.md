@@ -8,15 +8,15 @@ This project aims to Extact, Transform, and Load data from a variety of sources 
 
 -Web Scrape from [ESPN STATS](http://www.espn.com/mlb/history/leaders/_/breakdown/season/year/2018)
 
-##Beer Pricing
+## Beer Pricing
 
-#Extract
+# Extract
 
 A CSV was downloaded from [data.world}(https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba). 
 
 The CSV was then imported into a Pandas dataframe in a Jupyter Notebook.
 
-#Transform
+# Transform
 
 Using Pandas, the "nickname" column wad dropped and all the columns were renamed.
 
