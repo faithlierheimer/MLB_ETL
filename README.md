@@ -10,17 +10,17 @@ This project aims to Extact, Transform, and Load data from a variety of sources 
 
 ## Beer Pricing
 
-# Extract
+### Extract
 
 A CSV was downloaded from [data.world}(https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba). 
 
 The CSV was then imported into a Pandas dataframe in a Jupyter Notebook.
 
-# Transform
+### Transform
 
 Using Pandas, the "nickname" column wad dropped and all the columns were renamed.
 
-#Load
+### Load
 
 Once the Pandas dataframe was cleaned up, it was converted into a dictionary usings the Pandas to_dict() function. 
 
