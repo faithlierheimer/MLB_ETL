@@ -63,4 +63,4 @@ These were dropped to match the data from the API statistics.
 
 ### Load:
 
-Panas was used again to convert the data into a dictionary and then loaded into a new MongoDB Collection: scraped_stats_dict
+Pandas was used again to convert the data into a dictionary and then loaded into a new MongoDB Collection: scraped_stats_dict
