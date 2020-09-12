@@ -4,7 +4,7 @@ This project aims to Extact, Transform, and Load data from a variety of sources 
 ## Sources Used
 -Stadium Beer Pricing from [data.world](https://data.world/makeovermonday/2018w43-what-will-a-beer-cost-you-at-every-major-league-ba) (CSV Format)
 
--MLB Stats from [MLB-StatsAPI](https://github.com/toddrob99/MLB-StatsAPI/wiki.) (JSON Format)
+-MLB Stats from [MLB-StatsAPI](https://github.com/toddrob99/MLB-StatsAPI/wiki) (JSON Format)
 
 -Web Scrape from [ESPN STATS](http://www.espn.com/mlb/history/leaders/_/breakdown/season/year/2018) (BeautifulSoup Object)
 
